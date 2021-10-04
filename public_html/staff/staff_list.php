@@ -10,7 +10,7 @@
 try
 {
 
-    $dsn='mysql:host=db;dbname=shop;charset=utf8';
+    $dsn='mysql:host=mysql;dbname=bookshop;charset=utf8';
     $user='root';
     $password='password';
     $dbh=new PDO($dsn,$user,$password);

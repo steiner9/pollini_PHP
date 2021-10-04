@@ -12,13 +12,13 @@ try
 
     $pro_code = $_GET['procode'];
     
-    $dsn='mysql:host=db;dbname=shop;charset=utf8';
+    $dsn='mysql:host=mysql;dbname=bookshop;charset=utf8';
     $user='root';
     $password='password';
     $dbh=new PDO($dsn,$user,$password);
     $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-    $sql='SELECT name, price, gazou FROM mst_product WHERE code=?';
+    $sql='SELECT name, price, gazou FROM bookname WHERE code=?';
     $stmt=$dbh->prepare($sql);
     $data[] = $pro_code;
     $stmt->execute($data);

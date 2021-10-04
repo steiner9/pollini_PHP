@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Amazin | 本</title>
+    <title>Amazon | 本</title>
 </head>
 <body>
 

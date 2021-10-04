@@ -10,13 +10,13 @@
 try
 {
 
-    $dsn='mysql:host=db;dbname=shop;charset=utf8';
+    $dsn='mysql:host=mysql;dbname=bookshop;charset=utf8';
     $user='root';
     $password='password';
     $dbh=new PDO($dsn,$user,$password);
     $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-    $sql='SELECT code, name, price FROM mst_product WHERE 1';
+    $sql='SELECT code, name, price FROM bookname WHERE 1';
     $stmt=$dbh->prepare($sql);
     $stmt->execute();
 
