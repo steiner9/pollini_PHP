@@ -1,6 +1,5 @@
 <?php
 
-//phpinfo();
 
 try 
 {
@@ -16,6 +15,9 @@ catch(Exception $e)
     print $e . "\n";
     exit();
 }
+
+phpinfo();
+
 ?>
 <?php
 
